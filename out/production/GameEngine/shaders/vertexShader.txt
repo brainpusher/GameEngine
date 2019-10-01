@@ -1,0 +1,42 @@
+//position of the vertex from vao
+in vec3 position;
+// texture coordinates
+in vec2 textureCoords;
+in vec3 normal;
+
+out vec2 pass_textureCoords;
+out vec3 surfaceNormal;
+out vec3 toLightVector;
+out vec3 toCameraVector;
+
+uniform mat4 transformationMatrix;
+uniform mat4 projectionMatrix;
+uniform mat4 viewMatrix;
+uniform mat4 invertedViewMatrix;
+uniform vec3 lightPosition;
+
+void main(void){
+
+    //the last component is 1.0 because we have a 3d vector
+    vec4 worldPosition = transformationMatrix * vec4(position.x,position.y,position.z,1.0);
+
+    //where to render this vertex on the screen
+
+    gl_Position = projectionMatrix * viewMatrix * worldPosition;
+
+    pass_textureCoords = textureCoords;
+
+    //we product to transformationMatrix because our model can be rotated we make vec4(normal,0.0)
+    //because we need to cast 3d matrix to 4d matrix for multiplying and then we do .xyz
+    //because our normal is a 3d vector (isn't that EASY!!??)
+    surfaceNormal = (transformationMatrix * vec4(normal,0.0)).xyz;
+
+    //where position is a position of the current vertex
+    toLightVector = lightPosition - worldPosition.xyz;
+
+    //so we dont have the camera position in our shader program but we can get the negative position
+    //of the camera from the viewMatrix and inverse it to get the positive position
+
+    toCameraVector = (invertedViewMatrix * vec4(0.0,0.0,0.0,1.0)).xyz - worldPosition.xyz;
+
+}
