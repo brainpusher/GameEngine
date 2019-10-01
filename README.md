@@ -12,4 +12,4 @@
 **Чтобы посмотреть проект в действии необходимо скачать и распаковать архив. Далее открыть папку с проектом в IntelliJ Idea и запустить проект** 
 
 #Screenshot
-![alt text](https://www.dropbox.com/s/61yycugosadacz2/GameEngineScreenshot.PNG?dl=0)
+![alt text](https://imagizer.imageshack.com/img923/6562/71HCCl.png)
