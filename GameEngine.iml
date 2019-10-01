@@ -7,31 +7,30 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://C:/Libs/lwjgl-2.9.1/jar/lwjgl.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/ibxm.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/AppleJavaExtensions.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/asm-debug-all.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/jinput.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/jogg-0.0.7.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/jorbis-0.0.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/lwjgl-debug.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/lwjgl.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/lwjgl_test.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/lwjgl_util.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/lwjgl_util_applet.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/lzma.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/natives-linux.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/natives-mac.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/natives-windows.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/slick-util.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Libs/lwjgl-2.9.1/jar/lwjgl_util.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Libs/lwjgl-2.9.1/slick-util.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/libs/slick-util-src.zip!/" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>
