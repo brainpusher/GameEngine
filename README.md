@@ -10,3 +10,6 @@
 5. Добавление источников света и отражения
 
 **Чтобы посмотреть проект в действии необходимо скачать и распаковать архив. Далее открыть папку с проектом в IntelliJ Idea и запустить проект** 
+
+#Screenshot
+![alt text](https://www.dropbox.com/s/61yycugosadacz2/GameEngineScreenshot.PNG?dl=0)
