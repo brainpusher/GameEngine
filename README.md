@@ -11,5 +11,5 @@
 
 **Чтобы посмотреть проект в действии необходимо скачать и распаковать архив. Далее открыть папку с проектом в IntelliJ Idea и запустить проект** 
 
-#Screenshot
+# Screenshot
 ![alt text](https://imagizer.imageshack.com/img923/6562/71HCCl.png)
